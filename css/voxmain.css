@@ -1,0 +1,268 @@
+
+
+/* Grid 
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.grid {
+  width: 100%;
+}
+.row {
+  margin-bottom: 1em;
+}
+
+.grid, .row, [class*="-col"] {
+  padding: 0;
+  margin: 0;
+}
+.grid {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid:after, .row:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin-bottom: 1em;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+[class*="-col"] {
+  float: left;
+  margin-right: 1.5%;
+}
+
+[class*="-col"]:last-child {
+  margin-right: 0;
+}
+[class*="-col"], .row {
+	position: relative;
+}
+
+
+/* Columns
+================================ */
+[class*="-col"] {
+  float: left;
+  margin-right: 1.5%;
+}
+
+[class*="-col"]:last-child {
+    margin-right: 0;
+}
+.one-col {
+  width: 6.958%;
+}
+
+.two-col {
+  width: 15.41%;
+}
+
+.three-col {
+  width: 23.87%;
+}
+
+.four-col {
+  width: 32.33%;
+}
+
+.five-col {
+  width: 40.79%;
+}
+
+.six-col {
+  width: 49.25%;
+}
+
+.seven-col {
+  width: 57.70%;
+}
+
+.eight-col {
+  width: 66.16%;
+}
+
+.nine-col {
+  width: 74.62%;
+}
+
+.ten-col {
+  width: 83.08%;
+}
+
+.eleven-col {
+  width: 91.54%;
+}
+
+.twelve-col {
+  width: 100%;
+}
+
+
+
+
+
+/* Media Queries
+================================ */
+
+
+
+
+@media (min-width: 1280px) {
+	.grid-container {
+		max-width: 1279px;
+	}
+}
+/*definite stylings =======================*/
+body {
+	background: url("../img/vox-mars-bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	font-family: helvetica,arial,sans-serif;
+	color: rgb(94, 96, 95);
+}
+
+body a {
+	text-decoration: none;
+}
+header { 
+	height: 46px;
+	width: 100%;
+	background-color: rgba(101, 126, 142, 0.8);
+	position: fixed;
+	z-index: 25;
+}
+
+.main-nav-icons, .main-nav-share-card, .main-nav-social, .main-nav-exit {
+	float: right;
+	display: inline;
+	padding-right: 10px;
+	padding-top: 10px;
+	color: #f1f3f2;
+	font-size: 12px;
+}
+
+.why-care {
+	background-color: #fff;
+	color: rgb(94, 96, 95);
+	min-height: 420px;
+	overflow:scroll;
+	margin-top: 50px;
+	position:absolute;
+	right: 100px;
+	top: 50px;
+	}
+.article-content-wrapper {
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+.article-content {
+	padding-left: 45px;
+	padding-right: 45px;
+	pading-top: 85px;
+	padding-bottom: 25px ;
+}
+.article-content > p {
+	text-align: justify;
+	line-height: 26.25px;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.article-content a {
+	background-color: #fff200;
+}
+.article-bar.top {
+width: 100%;
+height: 35px;
+background-color: #fff200;
+position: relative;
+}
+
+.explain {
+	postion: fixed;
+	top: 100px;
+	left: 5px;
+
+}
+.top-explainer {
+	background-color: #fff200;
+	width:270px;
+	min-height: 220px;
+	margin: auto 0;
+}
+.top-explainer-header {
+	padding: 20px;
+	display: block;
+}
+.top-explainer h1 {
+	text-align: left;
+	padding-bottom: 10px;
+	line-height: 25px;
+	color: #000;
+	font-size: 24px;
+}
+.author {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.explainer-questions {
+	background-color: #313131;
+	height: auto;
+	width: 270px;
+	color: #aaa;
+	line-height: 20.25px;
+	list-style-image: none;
+	list-style-type:decimal;
+}
+ .explainer-article-bar {
+ 	height: 25px;
+ 	width: 270px;
+ 	background-color: #000;
+ }
+
+
+.mars-pic {
+	/*max-width: 231px;
+	max-height: 231px;*/
+	width: 40%;
+	float: right;
+	display: block;
+}
+.article-bar-text {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 13px;
+	padding-top: 8px;
+	color: #888;
+}
+.why-care.article-content {
+	padding-top: 20px;
+}
+
+
+/*temporary styling ==========================
+
+header {
+	background-color: brown;
+} 
+*/
