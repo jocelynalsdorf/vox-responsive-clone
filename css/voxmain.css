@@ -149,7 +149,7 @@ header {
 	position: fixed;
 	z-index: 25;
 }
-
+/*
 .main-nav-icons, .main-nav-share-card, .main-nav-social, .main-nav-exit {
 	float: right;
 	display: inline;
@@ -157,18 +157,19 @@ header {
 	padding-top: 10px;
 	color: #f1f3f2;
 	font-size: 12px;
-}
+}*/
 
 .why-care {
 	background-color: #fff;
 	color: rgb(94, 96, 95);
 	min-height: 420px;
-	overflow:scroll;
+	
 	margin-top: 50px;
 	position:absolute;
-	right: 100px;
-	top: 50px;
+	right: 60px;
+	top: 60px;
 	}
+
 .article-content-wrapper {
 	position: relative;
 	width: 100%;
@@ -180,13 +181,31 @@ header {
 	pading-top: 85px;
 	padding-bottom: 25px ;
 }
+.article-content > h1 {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
 .article-content > p {
 	text-align: justify;
 	line-height: 26.25px;
 	font-family: sans-serif;
 	text-decoration: none;
+	font-size: 15px;
+	padding-bottom: 5px;
+
+
 }
-.article-content a {
+.mars-pic {
+	margin-top: 12px;
+	margin-left: 12px;
+	float: right;
+	border: 1px solid grey;
+	padding: 5px;
+
+}
+
+p a {
 	background-color: #fff200;
 }
 .article-bar.top {
@@ -196,9 +215,14 @@ background-color: #fff200;
 position: relative;
 }
 
-.explain {
-	postion: fixed;
-	top: 100px;
+
+.article-car-bottom {
+	height: 25px;
+	background-color: blue;
+}
+.explain.four-col {
+	postion: fixed; 
+	top: 110px;
 	left: 5px;
 
 }
@@ -208,6 +232,14 @@ position: relative;
 	min-height: 220px;
 	margin: auto 0;
 }
+.fa .fa-angle-up, .up-arrow {
+	color:white;
+	font-weight: 300;
+	text-align: center;
+	font-size: 1.5em;
+
+	
+}
 .top-explainer-header {
 	padding: 20px;
 	display: block;
@@ -215,31 +247,94 @@ position: relative;
 .top-explainer h1 {
 	text-align: left;
 	padding-bottom: 10px;
-	line-height: 25px;
+	line-height: 28px;
 	color: #000;
 	font-size: 24px;
 }
-.author {
+.author, .time-date {
 	font-weight: 300;
 	text-transform: uppercase;
 	font-size: 11px;
+	padding-top: 10px;
+}
+.explainer-box {
+	background-color: #313131; 
+	width: 270px;
+	height: 500px;
+}
+
 }
 .explainer-questions {
 	background-color: #313131;
-	height: auto;
+	height: 286px;
 	width: 270px;
+	
+}
+.explainer-questions > ol {
 	color: #aaa;
 	line-height: 20.25px;
 	list-style-image: none;
 	list-style-type:decimal;
+	font-size: 13px;
+	display: block;
+	margin-left: 24px;
+	margin-top: 14px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	text-align: left;
+	width: 201px;
+}
+ol > li {
+	margin-top: 15px;
+}
+
+.hidden-questions {
+	visibility: hidden;
 }
  .explainer-article-bar {
  	height: 25px;
  	width: 270px;
  	background-color: #000;
  }
+.article-bar-arrow, .left-arrow,
+.fa .fa-angle-left {
+  display: block;
+	font-size: 18px;
+	float: left;
+	height: 25px;
+	width: 150px;
+	margin-left: 12px;
+	margin-top: 8px;
 
+}
+.right-arrow,
+.fa .fa-angle-right {
+font-size: 18px;
+float: right;
+display: block;
+height: 25px;
+margin-left: 60px;
+margin-top: -20px;
 
+width:20px;
+overflow: hidden;
+
+}
+
+.article-bar-text {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 13px;
+	padding-top: 11px;
+	color: #888;
+	
+	height: 25px;
+	width: 600px;
+
+}
 .mars-pic {
 	/*max-width: 231px;
 	max-height: 231px;*/
@@ -247,22 +342,96 @@ position: relative;
 	float: right;
 	display: block;
 }
-.article-bar-text {
-	text-align: center;
+.why-care.eight-col {
+	position: relative;
+	
+}
+.nasa-logo {
+	color: lightblue;
 	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 13px;
-	padding-top: 8px;
-	color: #888;
-}
-.why-care.article-content {
-	padding-top: 20px;
+	background-color: #fff;
+	font-size:13px;
 }
 
+.article-bar-bottom {
+	
+	height: 30px;
+	width: 800px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-top: 1px solid lightgrey;
+}
+.list-container {
+	position: relative;
+	height: 30px;
+	
+}
+.list-container > ul {
+	list-style: none;
+	padding-top: 6px;
+	margin: 0 auto;
+	max-width: 600px;
+	padding-left: 50px;
+}
 
-/*temporary styling ==========================
+.list-container > ul li {
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	display: inline;
+	width: auto;
 
-header {
-	background-color: brown;
-} 
-*/
+
+}
+
+.bottom-bar-arrow-left-arrow {
+	margin-top: 2px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 75px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bottom-bar-arrow-right-arrow {
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 30px;
+	
+
+	
+}
+
+.bottom-bar.share-card {
+	padding-left: 85px;
+	margin-top: 3px;
+}
+/*
+.bottom-bar-facebook, 
+.bottom-bar-twitter,
+.bottom-bar-google,
+.bottom-bar-unknown, {
+	padding-left: 5px;
+	margin-top: 3px;
+}*/
+
+/*
+.bottom-bar-arrow-left-arrow, 
+.bottom-bar-share-card, 
+.bottom-bar-facebook,
+.bottom-bar-twitter,
+.bottom-bar-google,
+.bottom-bar-unknown,
+.bottom-bar-arrow-right-arrow {
+	
+	float: left;
+	background-color: pink;
+	width: 30px;
+		} */
+
