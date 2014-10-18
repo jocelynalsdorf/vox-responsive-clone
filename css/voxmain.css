@@ -180,16 +180,6 @@ li.main-nav-exit {
 	font-style: italic;
 }
 
-/*
-.main-nav-icons, .main-nav-share-card, .main-nav-social, .main-nav-exit {
-	float: right;
-	display: inline;
-	padding-right: 10px;
-	padding-top: 10px;
-	color: #f1f3f2;
-	font-size: 12px;
-}*/
-
 .why-care {
 	background-color: #fff;
 	color: rgb(94, 96, 95);
@@ -335,7 +325,7 @@ ol > li {
 	font-size: 18px;
 	float: left;
 	height: 25px;
-	width: 150px;
+	/*width: 150px;*/
 	margin-left: 12px;
 	margin-top: 8px;
 
@@ -347,8 +337,10 @@ float: right;
 display: block;
 height: 25px;
 margin-left: 60px;
-margin-top: -20px;
-
+margin-top: -27px;
+position: absolute;
+top:100%;
+right: 0;
 width:20px;
 overflow: hidden;
 
@@ -361,9 +353,9 @@ overflow: hidden;
 	font-size: 13px;
 	padding-top: 11px;
 	color: #888;
-	
+	text-align: center;
 	height: 25px;
-	width: 600px;
+	
 
 }
 .mars-pic {
@@ -387,15 +379,17 @@ overflow: hidden;
 .article-bar-bottom {
 	
 	height: 30px;
-	width: 800px;
+	width: 100%;
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	border-top: 1px solid lightgrey;
+	overflow: :hidden;
 }
 .list-container {
 	position: relative;
 	height: 30px;
+	width: 100%;
 	
 }
 .list-container > ul {
@@ -403,7 +397,8 @@ overflow: hidden;
 	padding-top: 6px;
 	margin: 0 auto;
 	max-width: 600px;
-	padding-left: 50px;
+	
+	text-align: center;
 }
 
 .list-container > ul li {
@@ -412,6 +407,7 @@ overflow: hidden;
 	height: 30px;
 	display: inline;
 	width: auto;
+	
 
 
 }
@@ -440,29 +436,46 @@ overflow: hidden;
 }
 
 .bottom-bar.share-card {
-	padding-left: 85px;
+	padding-left: 15px;
 	margin-top: 3px;
 }
-/*
-.bottom-bar-facebook, 
-.bottom-bar-twitter,
-.bottom-bar-google,
-.bottom-bar-unknown, {
-	padding-left: 5px;
-	margin-top: 3px;
-}*/
+/*media queries =============================*/
 
-/*
-.bottom-bar-arrow-left-arrow, 
-.bottom-bar-share-card, 
-.bottom-bar-facebook,
-.bottom-bar-twitter,
-.bottom-bar-google,
-.bottom-bar-unknown,
-.bottom-bar-arrow-right-arrow {
+@media all and (max-width: 700px) {
+  [class*="-col"], .row {
+    width: 100%;
+    padding-left: 10px;
+	padding-right: 10px;
 	
-	float: left;
-	background-color: pink;
-	width: 30px;
-		} */
+  }
+/*.row {
+	margin: 0 auto;
+}*/
+ul.nav-list {
+		margin-top: 1px;
+		text-align: center;
+		padding-right: 10px;
+		background-color: rgba(101, 126, 142,);
+		z-index: 3;
+		
+	}
+.main-nav-logo {
+	text-align: center;
+
+}
+ .eight-col {
+ 	margin-left: 60px;
+ } 
+.mars-pic {
+	width: 100%;
+}
+.explain {
+	display: none;
+}
+}
+@media (max-width: 420px) {
+	.grid {
+		min-width: 440px;
+	}
+}
 
